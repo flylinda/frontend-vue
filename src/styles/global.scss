@@ -1,0 +1,70 @@
+@import './mixin.scss';
+// 颜色
+// 主题色
+// $theme-color: #ED6C00;
+$theme-color: #2d8cf0;
+// 文本色
+$font-color-lighter: #e5e4e4;
+$font-color-light: #b2b2b2;
+$font-color-base: #212121;
+// $font-color-placeholder: #868688;
+$font-color-placeholder: #b2b2b2;
+// 背景色
+$background-color-base: #e5e4e4;
+$background-color-lighter: #f0f0f0;
+$background-color-lightest: #f1f2f3;
+$background-color-dark: #333333;
+$background-color-theme-hover: #eaf4fe;
+$background-color-theme-selected: #ecfaff;
+$background-color-theme-drag-hover: #fff9c4;
+$background-icon-hover: #f1f2f3;
+
+// 边框色
+// $border-color-base: #e5e4e4;
+// $border-color-darker: #ccc;
+$border-color: #ebebeb;
+// 其他颜色
+$color-white: #fff;
+$color-black: #000;
+$color-green: #33d375;
+//icon颜色
+$color-icon: #757575;
+$color-icon-hover: #212121;
+
+// $color-error: #ed4014;
+$color-error: #f44336;
+// 字体尺寸
+%f-mini{
+  font-size: 10px;
+}
+%f-extra-small {
+  font-size: 12px;
+}
+%f-small {
+  font-size: 14px;
+}
+%f-normal {
+  font-size: 16px;
+}
+%f-giant {
+  font-size: 18px;
+}
+%f-giant-extra {
+  font-size: 20px;
+}
+%f-subtitle {
+  font-size: 24px;
+}
+%f-extra-giant {
+  font-size: 42px;
+}
+// 字体粗细
+%f-weight-normal {
+  font-weight: 400;
+}
+%f-half {
+  font-weight: 500;
+}
+%f-heavy {
+  font-weight: 600;
+}

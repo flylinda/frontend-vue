@@ -1,0 +1,244 @@
+/*
+* 这里主要是为了重置element ui 默认的style
+*/
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+// dialog中的表单样式
+.el-dialog {
+  .el-radio-group{
+    width: 350px;
+    padding:0 30px 0 15px;
+    .el-radio{
+    width: 80px;
+    }
+    .el-radio__inner{
+      border-radius: 0;
+      &:after{
+        display: block;
+        width: 3px;
+        height: 7px;
+        border: 1px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: rgba(0,0,0,0);
+        border-radius: 0;
+        // 将radio样式改为checkbox样式
+        transform: translate(-50%,-50%) rotate(45deg) scaleY(1) !important;
+      }
+    }
+  }
+  .el-form-item.is-required .el-form-item__label:before{
+    content: '·';
+    transform: translate(2px,-6px);
+    display: inline-block;
+  }
+  .el-form {
+    font-weight: 400;
+  }
+}
+// upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+/*
+* 重写全局成功、普通等提示的样式
+*/
+.i-message-reset{
+  box-sizing: border-box;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  background-color: #fff;
+  border-color: transparent;
+  color:#fa8919;
+  min-width: 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  i, p {
+    line-height: 22px;
+  }
+  .el-icon-success{
+    color:#fa8919;
+  }
+  .el-message__content{
+    color:#fa8919;
+  }
+}
+/*
+* 重写错误提示
+*/
+.el-message--error{
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  border-color: transparent;
+  min-width: 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  i, p {
+    line-height: 22px;
+    color: #ed4014 !important;
+  }
+}
+/*
+* 提供table 表格居中的style : class-name="table-column-center"
+*/
+.el-table{
+  .el-table__header-wrapper{
+    thead{
+      tr{
+        th{
+          height: 37px;
+          background-color: #fafafa;
+        }
+        .el-table-column--selection{
+          text-align: center;
+        }
+      }
+    }
+    .cell{
+      font-size: 12px;
+      color: #8590a6;
+      padding: 0 5px;
+    }
+  }
+  .el-table__body-wrapper{
+    .el-table__row{
+      td{
+        height: 64px;
+      }
+      &:hover{
+        td{
+          background-color: #fff3e8;
+        }
+      }
+      .el-table-column--selection{
+        text-align: center;
+      }
+    }
+    .cell{
+      color: #212121;
+      padding: 0 5px;
+    }
+    .table-column-img{  // 此class不可与table fixed一起使用  否则会有问题
+      .cell{
+        line-height: 1;
+        img{
+          line-height: 1;
+        }
+      }
+    }
+  }
+  &.cursor-table{
+    .el-table__body-wrapper{
+      .el-table__row{
+        cursor: pointer;
+      }
+      .cell{
+        padding: 0 5px;
+      }
+      .table-column-img{  // 此class不可与table fixed一起使用  否则会有问题
+        .cell{
+          line-height: 1;
+          img{
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.el-table__fixed-body-wrapper{
+  .el-table__body{
+    .el-table__row{
+      td{
+        height: 64px;
+      }
+    }
+  }
+}
+.table-column-center{
+  .cell{
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+
+/*
+* dialog 自适应宽度 以及部分样式重写
+*/
+.el-dialog__wrapper{
+  .el-dialog{
+    border-radius: 15px;
+    box-shadow: 0px -1px 17px #666;
+    width: 40%;
+    margin-top: 5vh!important;
+    @include respond-to(lg) {
+      width: 700px;
+    }
+    @include respond-to(md) {
+      width: 700px;
+    }
+    @include respond-to(sm) {
+      width: 700px;
+    }
+    @include respond-to(xs) {
+      width: 700px;
+    }
+    .el-dialog__header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      .el-dialog__title{
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+      }
+      .el-dialog__headerbtn{
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+      }
+    }
+    .el-dialog__body{
+      padding: 15px 30px;
+    }
+    .el-dialog__footer{
+      padding-top: 0;
+    }
+  }
+  .is-fullscreen{
+    width: 100%!important;
+    margin-top: 0!important;
+  }
+}
+
+
+.el-tooltip__popper{
+  max-width: 500px;
+}
