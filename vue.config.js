@@ -32,7 +32,7 @@ module.exports = {
       proxy: {
         '/demo': {
           target: 'url'
-        },
+        }
       }
     }
   }
