@@ -30,6 +30,9 @@ module.exports = {
       // https: true,
       host: 'localhost',
       proxy: {
+        '/demo': {
+          target: 'url'
+        },
       }
     }
   }

@@ -24,13 +24,13 @@
         @on-cancel="cancel">
         <Form :model="formItem" :label-width="80">
           <FormItem label="姓名">
-              <Input v-model="formItem.name" placeholder="请输入姓名"></Input>
+              <Input v-model="formItem.name" placeholder="请输入姓名" />
           </FormItem>
           <FormItem label="年龄">
-              <Input v-model="formItem.age" placeholder="请输入年龄"></Input>
+              <Input v-model="formItem.age" placeholder="请输入年龄" />
           </FormItem>
           <FormItem label="住址">
-              <Input v-model="formItem.address" placeholder="请输入住址"></Input>
+              <Input v-model="formItem.address" placeholder="请输入住址" />
           </FormItem>
         </Form>
     </Modal>
@@ -38,7 +38,8 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
+// 前后端交互使用axios
+// import axios from 'axios'
 export default {
   data () {
     return {
