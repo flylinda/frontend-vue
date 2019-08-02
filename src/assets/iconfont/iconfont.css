@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1562767821760'); /* IE9 */
+  src: url('iconfont.eot?t=1562767821760#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO0AAsAAAAACEgAAANoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqEIINKATYCJAMMCwgABCAFhG0HRRsfBxHVm9nIfhTGMbHOzMzeyZtQnjf2fQiep7zq/VQ6U13j1kJQZgWNl7pJPHcAbG2KflmhIhRLcp76aZn5sUJDvsOIw2nTEpjftkTiDOdYGnVxFAcU6B4YlUhaQAFxi+wirohF3oYAhuwURerWb9oWjQ1aJIAMHTSgFzpjx25oFTSCU7HTRpbjQVsLrGvAsuD78pXSosHCo0ArW/av15eaH/N89Sg37Hb1CCjG8wLKPlBAUcAG6V7p74iK8kVRGEtvN9c62AjWWKlwOJDbRmelfzwLxAE1RwFQkLdanJSCiiDw1SPjDZz/PnCAaOAYcJk3B0ZqlKzZomOcKHSXnhK38FJ2SVi3aA1sOJAvfl9ilsxm91aXhWtFNh40cQv3Z8RdzfFvO18h/ujZbM9oe+xO9m13K7DwjHs2cmL2feezJKTkz3H0drbNt9qvDcm64IjVYNlAwwStRKKTO71z1MLV7prI6EXrEta25aQFo9e97ZTItm1bd4iRijkLkfeXSjcHfVdMukyII26C7DeJgUSzPy+ZNppEc1gm+PBNkGR9zZekk1W4ZMmwOuxN9B7+9Tw29vmvItn6V+6frcL23JPmHHEyvR03aaLRhR7n3NuzZeG0mWP6RCQFkvQgczBw0JvT63nNIF2wRuSroiV6oxJlTs19Yit9xncmYseG0vqq/6ouYU77E6M2lEi9yHd1ZAn3tC+RpSVMku/g8hLLD/qSKLXjfv+2LWfPyt2yZd1W9ATNVY+stwDKlQd/9zdcqjG0QI/Yqv91pA3A46a+64HdBm7U966TnrJ/qQD22bYKOZRtyqncDSpS3lbOAoxt4A+2A/h40d8YBDeDoAkmsIggGxSavESbWhQeIikLB00NGIrQYH8kfkajENsLFGYOByGOVFjEcB6KOK4TbepzeAjxHQ5xomBoL/4TI8kvvFN1GBfBHdY/uI2yJi5RYesNTYkLp1UB/YV8uhR0dZsvXTEjj7Hm/JheRINmSjBy92GMBAeTx01qK3IMTaOrnlRvlCpFHcZFcIf1D26jrL3Rogqfv6EpceGGnpb4C/l0k0NXtwDiVZ9BPdfyyPkxvYgGzZRg5LwYcZ7gqJ7mcZPa9sgeQyMM0lB9Pb8xPd8xwIC6lViixMa5iYsDysW7JQuV6e3QliX/qVQV') format('woff2'),
+  url('iconfont.woff?t=1562767821760') format('woff'),
+  url('iconfont.ttf?t=1562767821760') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1562767821760#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ticket:before {
+  content: "\e723";
+}
+
+.icon-jiantou_qiehuanyou:before {
+  content: "\eb05";
+}
+

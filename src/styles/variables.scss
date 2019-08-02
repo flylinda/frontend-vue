@@ -1,0 +1,14 @@
+//sidebar
+$menuBg:#fff;
+$subMenuBg:#fff;
+$menuHover:#fff;
+
+$orange: #fa8919;
+
+// _config.scss
+$breakpoints: (
+        'xs': 'only screen and ( max-width: 768px)',
+        'sm': 'only screen and ( max-width: 992px)',
+        'md': 'only screen and ( max-width: 1199px)',
+        'lg': 'only screen and ( min-width: 1200px)',
+) !default;

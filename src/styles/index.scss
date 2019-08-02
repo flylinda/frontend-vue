@@ -1,0 +1,329 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './theme.scss';
+@import './layout.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%;
+  background: $background-color-lightest;
+}
+
+.app-container {
+  padding:0 20px;
+}
+.cursor{
+  cursor: pointer;
+}
+// 页数page组件，全局默认居右，如不想用，不加此class
+.page-module{
+  text-align: right;
+  margin: 20px 0;
+}
+// 全局定义a标签
+a{
+  color:#ed6c00;
+  &:hover{
+    color:#f18933
+  }
+}
+// 定义通用的 margin
+.ml-5{
+  margin-left: 5px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mb-0{
+  margin-bottom: 0!important;
+}
+.mr-5{
+  margin-right: 5px;
+}
+.p-0{
+  padding: 0!important;
+}
+// 定义 i 颜色的color
+.i-orange{
+  color: $orange;
+}
+i:focus{
+  outline: none;
+}
+.hover-orange{
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  &:hover{
+    background-color: $orange;
+    color:#fff;
+  }
+}
+// 定义font-size  一般用于比较大的icon
+.fs-100{
+  font-size: 100px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-12{
+  font-size: 12px;
+}
+// 旋转180
+.transform-180{
+  transform: rotate(180deg);
+}
+.inline-block{
+  display: inline-block;
+}
+.text-right{
+  text-align: right;
+}
+// 缩略图
+.small-img{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 1;
+}
+.mini-img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+// page组件
+.el-pagination{
+  padding: 20px 0;
+  text-align: right;
+  background-color: #fff;
+  font-size: 14px;
+}
+/*
+* flex布局
+*/
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row-start-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.row-center-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.row-space-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-start-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*
+* 图片上传 缩略图 以及 封面
+*/
+.avatar-uploader{
+  line-height: 1;
+  .el-upload {
+    line-height: 1;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    .avatar-uploader-icon {
+      font-size: 28px;
+      color: #8c939d;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      text-align: center;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      display: block;
+    }
+    .avatar-uploader-icon-cover{
+      width: 160px;
+    }
+    .avatar-cover{
+      width: 160px;
+    }
+    &:hover{
+      border-color: $orange;
+    }
+  }
+}
+/*
+* 状态过滤tag 全局样式
+*/
+.i-tag{
+  padding: 4px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  background-color: $orange;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+.i-tag-green {
+  background-color: #19be6b;
+}
+.i-tag-green-800{
+  background-color: #4CAF50;
+}
+.i-tag-blue-300{
+  background-color: #64B5F6;
+}
+.i-tag-blue {
+  background-color: #2db7f5;
+}
+.i-tag-blue-800 {
+  background-color: #2d8cf0;
+}
+.i-tag-orange {
+  background-color: $orange;
+}
+.i-tag-red{
+  background-color: #ed4014;
+}
+.i-tag-gray{
+  background-color: #c5c8ce;
+}
+.i-tag-gray-800{
+  background-color: #BDBDBD;
+}
+.i-tag-pink{
+  background-color: #E91E63;
+}
+.border-bottom{
+  border-bottom: 1px solid #ebebeb;
+}
+// 单行溢出省略
+.text-hide{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.inline-block{
+  display: inline-block;
+}
+// 搜索过滤input
+.search-input{
+  input{
+    border-radius: 30px;
+  }
+}
+// 弹框空白高度控制
+.blank-height{
+  min-height: 200px;
+  max-height: 400px;
+}
